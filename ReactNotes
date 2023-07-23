@@ -1,0 +1,33 @@
+1. Get familer with how to use JS to add emenents on child.
+2. After that explain ways to use react in project 
+3. First way is using CDN
+4. Cdn link after adding we can assess recat code in console meanr react is available into our project
+5. Sccript tag is having corssorigin attribute it is for 
+
+<!-- part 2 using react cdn -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+6. script 1 :- core of recat cre algorith
+7. recat DOm :- This is use for dom manupulation 
+8. why 2 script here is recat is use on multiple platform mobile web etc etc hence
+
+9. React.createElement("h1", {}, "This is first element 1") => way to create react element using react
+10. First param is tag name , second is object we need using this we can pass attribute, thris id content
+
+
+
+
+
+Cross Origin :- 
+control how the browser handles loading and executing scripts that come from a different domain (i.e., a domain different from the one hosting the webpage). The attribute is primarily used for security purposes, particularly to prevent certain types of cross-origin attacks.
+
+The crossorigin attribute can take different values, which determine the behavior of the script loading:
+
+anonymous: This is the default value if the crossorigin attribute is present but has no value specified. It means that the script is loaded without any credentials, and the script itself won't be able to access any sensitive data or modify the DOM of the page it's being included in. This is the most secure option and is suitable for most scenarios.
+
+use-credentials: If the crossorigin attribute is set to this value, it indicates that the script requires credentials (e.g., cookies or HTTP authentication) to be loaded. This is used when you have specific cross-origin settings on your server that require authentication to access the script.
+
+Absence of crossorigin attribute: If the crossorigin attribute is not present, or the browser doesn't support it, the script is loaded with full access to the DOM of the page, as if it were a same-origin script. This can potentially pose security risks, especially if you are loading scripts from untrusted sources.
+
+To use the crossorigin attribute in a <script> tag, you can include it like this:
